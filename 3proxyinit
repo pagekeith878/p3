@@ -1,0 +1,13 @@
+#!/bin/sh
+
+case "$1" in
+   start)
+       echo Starting 3Proxy in Azure
+
+       /etc/3proxy/3proxy /etc/3proxy/3proxy.cfg
+       ;;
+   *)
+       echo Usage: \$0 "{start}"
+       exit 1
+esac
+exit 0
